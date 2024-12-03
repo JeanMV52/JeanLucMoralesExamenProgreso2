@@ -4,10 +4,46 @@
              x:Class="JeanLucMoralesExamenProgreso2.MoralesJeanLucNombres"
              Title="Nombres">
     <Grid RowDefinitions="*,*" ColumnDefinitions="*,*">
-        <BoxView Grid.Row="0" Grid.Column="0" Width="100" Height="100" />
-        <BoxView Grid.Row="0" Grid.Column="1" Width="100" Height="100" />
-        <BoxView Grid.Row="1" Grid.Column="0" Width="100" Height="100" />
-        <BoxView Grid.Row="1" Grid.Column="1" Width="100" Height="100" />
+        
+        <Grid Grid.Row="0" Grid.Column="0">
+            <BoxView Width="100" Height="100" />
+        <Label
+            Text="Jean"
+            FontSize="Body"
+            FontAttributes="Bold"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+        </Grid>
+        
+        <Grid Grid.Row="0" Grid.Column="1">
+            <BoxView Width="100" Height="100" />
+            <Label
+            Text="Luc"
+            FontSize="Body"
+            FontAttributes="Bold"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="0">
+            <BoxView Width="100" Height="100" />
+            <Label
+            Text="Morales"
+            FontSize="Body"
+            FontAttributes="Bold"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="1">
+            <BoxView Width="100" Height="100" />
+            <Label
+            Text="Vaca"
+            FontSize="Body"
+            FontAttributes="Bold"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+        </Grid>
     </Grid>
 
 </ContentPage>
