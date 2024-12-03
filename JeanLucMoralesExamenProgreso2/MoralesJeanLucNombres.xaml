@@ -32,7 +32,8 @@
             FontSize="Body"
             FontAttributes="Bold"
             VerticalOptions="Center" 
-            HorizontalOptions="Center"/>
+            HorizontalOptions="Center"
+            Style="{StaticResource CambioColor}"/>
         </Grid>
 
         <Grid Grid.Row="1" Grid.Column="1">
@@ -42,7 +43,8 @@
             FontSize="Body"
             FontAttributes="Bold"
             VerticalOptions="Center" 
-            HorizontalOptions="Center"/>
+            HorizontalOptions="Center"
+            Style="{StaticResource CambioColor}"/>
         </Grid>
     </Grid>
 
