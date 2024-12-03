@@ -1,4 +1,6 @@
-﻿namespace JeanLucMoralesExamenProgreso2
+﻿using JeanLucMoralesExamenProgreso2.Modelos;
+
+namespace JeanLucMoralesExamenProgreso2
 {
     public partial class MainPage : ContentPage
     {
@@ -8,18 +10,16 @@
         {
             InitializeComponent();
         }
-
-        private void OnCounterClicked(object sender, EventArgs e)
+        private async void btn_guardar_Clicked(object sender, EventArgs e)
         {
-            count++;
+            MoralesJeanRecarga recarga = new MoralesJeanRecarga
+            {
+                Numero = Int32.Parse(MoralesJeanEditor_numero.Text),
+                Nombre = MoralesJeanLucEditor_nombre.Text,
+            };
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
         }
+
     }
 
 }
