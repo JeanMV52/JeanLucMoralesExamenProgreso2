@@ -10,12 +10,12 @@
     <TabBar>
         <ShellContent 
             Title="Recarga"
-            Icon="home_icon.png"
+            Icon="home2.png"
             ContentTemplate="{DataTemplate local:MainPage}" />
 
         <ShellContent 
             Title="Nombres"
-            Icon="name_icon.png"
+            Icon="usuario2.png"
             ContentTemplate="{DataTemplate local:MoralesJeanLucNombres}" />
     </TabBar>
 
