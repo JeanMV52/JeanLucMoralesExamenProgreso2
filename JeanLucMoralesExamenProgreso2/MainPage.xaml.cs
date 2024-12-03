@@ -4,11 +4,11 @@ namespace JeanLucMoralesExamenProgreso2
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
+        public MoralesJeanRecarga recarga = new MoralesJeanRecarga();
         public MainPage()
         {
             InitializeComponent();
+            BindingContext = recarga;
         }
         private async void btn_guardar_Clicked(object sender, EventArgs e)
         {
@@ -17,6 +17,8 @@ namespace JeanLucMoralesExamenProgreso2
                 Numero = Int32.Parse(MoralesJeanEditor_numero.Text),
                 Nombre = MoralesJeanLucEditor_nombre.Text,
             };
+            OnPropertyChanged(nameof(recarga));
+            Navigation.PushAsync(new MainPage());
 
         }
 
